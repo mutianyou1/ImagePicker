@@ -11,6 +11,7 @@
 #import "MUAlbumListTableViewController.h"
 #import "MUPhotoViewController.h"
 #import "MUAsset.h"
+#import "UIImage+WaterMaker.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #define SIZE self.view.bounds.size.width
 
@@ -66,14 +67,14 @@
     //删除占位图
     [self.placeHolderImage removeFromSuperview];
     
-    CGRect rect = self.scrollView.bounds;
+    CGRect rect = [UIScreen mainScreen].bounds;
     self.pageControl.numberOfPages = assetArray.count;
     self.scrollView.contentSize = CGSizeMake(SIZE * assetArray.count, 0);
     self.numberOfPages = assetArray.count;
     for (MUAsset *asset in assetArray) {
         ALAssetRepresentation *representation = [asset.asset defaultRepresentation];
         UIImageView *imageView = [UIImageView new];
-        imageView.image = [UIImage imageWithCGImage:[representation fullScreenImage]];
+        imageView.image = [[UIImage imageWithCGImage:[representation fullScreenImage]]waterMakerWithString:@"by Mutianyou1"];
         rect.origin.x = [assetArray indexOfObject:asset] * SIZE;
         imageView.frame = rect;
         [self.scrollView addSubview:imageView];

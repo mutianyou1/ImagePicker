@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2A7B06E1D1B77930061ECD6 /* UIImage+WaterMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7B06D1D1B77930061ECD6 /* UIImage+WaterMaker.m */; };
 		DD65E4A41C34CEFE00B9AC4D /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6BDE7E1C33D84B001CC3F4 /* Photos.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DD65E4A71C34CFEB00B9AC4D /* MUAlbumListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD65E4A61C34CFEB00B9AC4D /* MUAlbumListTableViewController.m */; };
 		DD65E4AA1C34D5E800B9AC4D /* MUAlbumListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD65E4A91C34D5E800B9AC4D /* MUAlbumListTableViewCell.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2A7B06C1D1B77930061ECD6 /* UIImage+WaterMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WaterMaker.h"; sourceTree = "<group>"; };
+		D2A7B06D1D1B77930061ECD6 /* UIImage+WaterMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WaterMaker.m"; sourceTree = "<group>"; };
 		DD65E4A51C34CFEB00B9AC4D /* MUAlbumListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUAlbumListTableViewController.h; sourceTree = "<group>"; };
 		DD65E4A61C34CFEB00B9AC4D /* MUAlbumListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUAlbumListTableViewController.m; sourceTree = "<group>"; };
 		DD65E4A81C34D5E800B9AC4D /* MUAlbumListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUAlbumListTableViewCell.h; sourceTree = "<group>"; };
@@ -114,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2A7B06B1D1B776B0061ECD6 /* waterMaker */ = {
+			isa = PBXGroup;
+			children = (
+				D2A7B06C1D1B77930061ECD6 /* UIImage+WaterMaker.h */,
+				D2A7B06D1D1B77930061ECD6 /* UIImage+WaterMaker.m */,
+			);
+			name = waterMaker;
+			sourceTree = "<group>";
+		};
 		DD6BDE781C33CF0F001CC3F4 /* MUImagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +189,7 @@
 				DDDC1FE11C312FDC00CFAF2A /* ViewController.h */,
 				DDDC1FE21C312FDC00CFAF2A /* ViewController.m */,
 				DDDC1FE41C312FDC00CFAF2A /* Main.storyboard */,
+				D2A7B06B1D1B776B0061ECD6 /* waterMaker */,
 				DD6BDE781C33CF0F001CC3F4 /* MUImagePicker */,
 				DD7E9A421C365BDD0054DE89 /* imageResorces */,
 				DDDC1FE71C312FDC00CFAF2A /* Assets.xcassets */,
@@ -353,6 +366,7 @@
 				DD65E4A71C34CFEB00B9AC4D /* MUAlbumListTableViewController.m in Sources */,
 				DDB55A9A1D03F680008E9E31 /* MuBigScrollView.m in Sources */,
 				DD6B319F1C35180D0056B39B /* MUPhotoSelectCollectionViewCell.m in Sources */,
+				D2A7B06E1D1B77930061ECD6 /* UIImage+WaterMaker.m in Sources */,
 				DD6B31961C3507890056B39B /* MUPhotoViewController.m in Sources */,
 				DDDC1FE01C312FDC00CFAF2A /* AppDelegate.m in Sources */,
 				DDDC1FDD1C312FDC00CFAF2A /* main.m in Sources */,
